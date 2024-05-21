@@ -45,15 +45,18 @@ echo "<br>";
 teste();
 
 ?>
+
 <?php
 echo "<br>Fernanda";
 print "<br>Fernanda<br><br>";
 ?>
+
 <?php
 $x = 5;
 var_dump($x);
 echo "<br>";
 ?>
+
 <?php
 $x = 'Minha string';
 $y = "Minha string 2!";
@@ -62,62 +65,75 @@ echo "<br>";
 var_dump($y);
 echo "<br>";
 ?>
+
 <?php
 $x = 3.14;
 var_dump($x);
 echo "<br>";
 ?>
+
 <?php
 $x = true;
 var_dump($x);
 echo "<br>";
 ?>
+
 <?php
 $cars =array("BMW","BYD","AUDI");
 var_dump($cars);
 echo "<br>";
 ?>
+
 <?php
 echo "<br>";
 echo strlen("Olá Mundo!")
 ?>
+
 <?php
 echo "<br>";
 echo str_word_count('Olá mundo!')
 ?>
+
 <?php
 echo "<br>";
 echo strpos("Novo Bravo Mundo", "Iron Maiden")
 ?>
+
 <?php
 $x = "Ola mundo!";
 echo strtoupper($x);
 ?>
+
 <?php
 $x = "Novo Teste";
 echo strtolower ($x);
 ?>
+
 <?php
 $x = "Meu Teste";
 echo "<br>";
 echo str_replace ("Teste", "Arquivo", $x);
 ?>
+
 <?php
 $x = "Meu Teste";
 echo "<br>";
 echo strrev ($x);
 ?>
+
 <?php
 echo "<br>";
 $x = "Meu Teste";
 echo trim($x);
 ?>
+
 <?php
 echo "<br>";
 echo "<input value='" . $x . "'>";
 echo "<br>";
 echo "<input value='" . trim($x) . "'>";
 ?>
+
 <?php
 $x = "Meu ";
 $y = "Teste";
@@ -125,6 +141,7 @@ $z= $x . $y;
 echo "<br>";
 echo $z;
 ?>
+
 <?php 
 $x = "Fernanda ";
 $y = "Marques ";
@@ -133,3 +150,85 @@ $w = $x . $y . $p;
 echo "<br>";
 echo $w;
 ?> 
+
+<?php 
+$x = "Meu Teste";
+echo "<br>";
+echo substr($x, 3);
+?>
+
+<?php 
+//<--*Caracteres de escape*-->
+//\' Single Quote
+//\" Double Quote 
+//\$ PHP variables
+//\n New Line 
+//\r Carriage Return
+//\t Tab
+//\f Form Feed
+//\ooo Octal Value 
+//\xhh Hex Value
+ 
+$x = "Somos os chamados \"Vikings\" do norte";
+echo $x;
+?>
+
+<?php 
+$a = 5;
+$b = 5.34;
+$c = "25";
+$y = 1.9e411;
+echo "<br>";
+var_dump($a);
+echo "<br>";
+var_dump($b);
+echo "<br>";
+var_dump($c);
+echo "<br>";
+var_dump($y);
+echo "<br>";
+?>
+
+<?php 
+//verifique se o tipo de uma var é inteiro
+$x = 9685;
+var_dump(is_int($x));
+echo "<br>";
+//verificar novamente
+$x = 3.14;
+var_dump(is_int($x));
+echo "<br>";
+$x = 10.123;
+var_dump(is_float($x));
+echo "<br>";
+$x = 1.9e411;
+var_dump(is_infinite($x));
+echo "<br>";
+echo "<br>";
+?>
+
+<?php 
+$x = 25.232;
+var_dump(is_string($x));
+echo "<br>";
+$x = 5489;
+var_dump(is_string($x));
+echo "<br>";
+$x = "Meu Teste";
+var_dump(is_string($x));
+echo "<br>";
+$x = 12.5e896;
+var_dump(is_string($x));
+echo "<br>";
+?>
+
+<?php 
+//Converter float para inteiro
+echo "<br>";
+$x = 120.45075;
+$int_cast = (int)$x;
+echo $int_cast;
+echo "<br>";
+echo "<br>";
+
+?>
