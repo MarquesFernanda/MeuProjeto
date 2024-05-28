@@ -327,3 +327,32 @@ else {
 	echo " A média é $resultado, o aluno está reprovado.";
 }
 ?>
+
+<?php 
+$nota1 = 5;
+$nota2 = 4;
+$nota3 = 5;
+$nota4 = 3;
+$resultado = ($nota1+$nota2+$nota3+$nota4)/4;
+
+if (($resultado >= 7) && ($resultado != 10)) {
+	$mensagem = 'O aluno foi aprovado.';
+	echo "<br>";
+	echo "A média foi $resultado. $mensagem ";
+}
+elseif ($resultado == 0) {
+	$mensagem = 'Estude mais, você não acertou nada.';
+	echo "<br><br>";
+	echo "A média foi $resultado. $mensagem ";
+}
+elseif ($resultado == 10) {
+	$mensagem = 'Parabéns! Aprovado com nota máxima';
+	echo "<br><br>";
+	echo "A média foi $resultado. $mensagem ";
+}
+else {
+	$mensagem = 'O aluno foi reprovado.';
+	echo "<br><br>";
+	echo "A média foi $resultado. $mensagem";
+}
+?>
