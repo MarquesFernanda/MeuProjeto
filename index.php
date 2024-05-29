@@ -334,6 +334,7 @@ $nota2 = 4;
 $nota3 = 5;
 $nota4 = 3;
 $resultado = ($nota1+$nota2+$nota3+$nota4)/4;
+$mensagem = '';
 
 if (($resultado >= 7) && ($resultado != 10)) {
 	$mensagem = 'O aluno foi aprovado.';
@@ -354,5 +355,22 @@ else {
 	$mensagem = 'O aluno foi reprovado.';
 	echo "<br><br>";
 	echo "A média foi $resultado. $mensagem";
+}
+
+
+?>
+
+<?php 
+$num = 20;
+/**$num <20 " O número é menor que 20"
+num > 20 " O número é maior que 20"
+**/
+if ($num < 20) {
+	echo "<br><br>";
+	echo "O número é menor que 20.";
+}
+else {
+	echo "<br><br>";
+	echo "O número é maior ou igual a 20.";
 }
 ?>
