@@ -374,3 +374,73 @@ else {
 	echo "O número é maior ou igual a 20.";
 }
 ?>
+
+<?php 
+$idade = 0;
+
+if ($idade >= 16 && $idade <= 65) {
+	echo "<br><br>";
+	echo "O uso do medicamento é permitido.";	
+}
+
+elseif ($idade > 65) {
+	echo "<br><br>";
+	echo "O uso do medicamento é permitido apenas com restrições.";
+}
+
+elseif ($idade <= 10 && $idade == 1) {
+	echo "<br><br>";
+	echo "O uso do medicamento é proibido.";
+}
+
+else {
+	echo "<br><br>";
+	echo "Idade não reconhecida.";
+}
+?>
+
+<?php 
+$a = 5;         //Int
+$b = 3.14;      //Float
+$c = "hoje";    //String
+$d = true;      //Booleano
+$e = NULL;      //NULL
+
+//Conversão para string
+$a = (array) $a;
+$b = (array) $b;
+$c = (array) $c;
+$d = (array) $d;
+$e = (array) $e;
+
+//Mostrar ao usuário
+echo "<br>";
+var_dump ($a); echo "<br>";
+var_dump ($b); echo "<br>";
+var_dump ($c); echo "<br>";
+var_dump ($d); echo "<br>";
+var_dump ($e); echo "<br>";
+?>
+
+<?php 
+$a = array ("Volvo", "BMW", "Toyota"); //array indexado
+$b = array ("Peter" >= "30", "Joao" >= "40", "Carlos" >= "50"); //array associativo
+
+$a = (object) $a;
+$b = (object) $b;
+
+echo "<br>";
+
+var_dump($a); echo "<br>";
+var_dump($b); echo "<br>";
+?>
+
+<?php 
+echo "<br><br>";
+echo (pi()) . "<br>";
+echo (min(0, 20, 130, -10, -230)) . "<br>";
+echo (max(0, 20, 130, -10, -230)) . "<br>";
+echo (sqrt(64)) . "<br>";
+echo (round(0.60)) . "<br>";
+echo (rand(10, 50)) . "<br>";
+?>
